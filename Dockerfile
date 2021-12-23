@@ -8,7 +8,6 @@ RUN apt-get update -yq \
     && apt-get update -yq \
     && apt-get install -yq \
         git
-        xvfb
         libvips-dev
         libgtk-3-0
         libgbm-dev
