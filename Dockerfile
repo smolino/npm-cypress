@@ -14,4 +14,4 @@ RUN apt-get update -yq \
         vim \
         git \
         nodejs
-RUN nmp -g install cypress
+RUN npm -g install cypress
