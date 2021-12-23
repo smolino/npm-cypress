@@ -8,6 +8,5 @@ RUN apt-get update -yq \
     && apt-get update -yq \
     && apt-get install -yq \
         git
-        vim
         nodejs
 RUN nmp -g install cypress
