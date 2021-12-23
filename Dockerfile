@@ -7,5 +7,4 @@ RUN apt-get update -yq \
     && curl -L https://deb.nodesource.com/setup_12.x | bash \
     && apt-get update -yq \
     && apt-get install -yq \
-        dh-autoreconf=19 \
         nodejs
