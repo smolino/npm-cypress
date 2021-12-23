@@ -18,4 +18,3 @@ RUN mkdir /root/.cache
 RUN mkdir /root/.cache/Cypress/
 RUN chmod -R 777 /root/.cache/
 RUN chmod -R 777 /root/.cache/Cypress/
-RUN npm -g install cypress
