@@ -31,3 +31,4 @@ RUN chmod -R 777 /root/.cache/
 RUN chmod -R 777 /root/.cache/Cypress/
 RUN npm install --save-dev @4tw/cypress-drag-drop
 RUN npm install
+RUN npm install cypress
