@@ -13,8 +13,21 @@ RUN apt-get update -yq \
         libasound-dev \
         vim \
         git \
-        nodejs
+        nodejs \
+        libgtk2.0-0 \
+        libgtk-3-0 \
+        libgbm-dev \
+        libnotify-dev \
+        libgconf-2-4 \
+        libnss3 \
+        libxss1 \
+        libasound2 \
+        libxtst6 \
+        xauth \
+        xvfb
 RUN mkdir /root/.cache
 RUN mkdir /root/.cache/Cypress/
 RUN chmod -R 777 /root/.cache/
 RUN chmod -R 777 /root/.cache/Cypress/
+RUN npm install --save-dev @4tw/cypress-drag-drop
+RUN npm install
