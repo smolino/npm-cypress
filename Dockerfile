@@ -30,6 +30,9 @@ RUN apt-get update -yq \
     && mkdir /root/.cache/Cypress/ \
     && chmod -R 777 /root/.cache/ \
     && chmod -R 777 /root/.cache/Cypress/ \
+    && cd /opt/ \
+    && git clone https://github.com/entando/entando-test-automation.git \
+    && cd /opt/entando-test-automation/ui-tests \
     && npm install --save-dev @4tw/cypress-drag-drop \
     && npm install \
     && npm install cypress \
