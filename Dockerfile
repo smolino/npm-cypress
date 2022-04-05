@@ -11,6 +11,7 @@ RUN apt-get update -yq \
         libgtk-3-0 \
         libgbm-dev \
         libasound-dev \
+        apache2 \
         vim \
         git \
         nodejs \
@@ -24,12 +25,12 @@ RUN apt-get update -yq \
         libasound2 \
         libxtst6 \
         xauth \
-        xvfb
-RUN mkdir /root/.cache
-RUN mkdir /root/.cache/Cypress/
-RUN chmod -R 777 /root/.cache/
-RUN chmod -R 777 /root/.cache/Cypress/
-RUN npm install --save-dev @4tw/cypress-drag-drop
-RUN npm install
-RUN npm install cypress
-RUN export CYPRESS_PORT=8080
+        xvfb \
+    && mkdir /root/.cache \
+    && mkdir /root/.cache/Cypress/ \
+    && chmod -R 777 /root/.cache/ \
+    && chmod -R 777 /root/.cache/Cypress/ \
+    && npm install --save-dev @4tw/cypress-drag-drop \
+    && npm install \
+    && npm install cypress \
+    && export CYPRESS_PORT=8080
